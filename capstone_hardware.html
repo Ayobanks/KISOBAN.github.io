@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Capstone Hardware</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="index.html">Kisoban Rajendran</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+               
+                <li class="item">
+                    <a class="link" href="#blog">Results</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header header-mini">
+        <div class="overlay"></div>
+        <div class="header-content container"><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+           
+            <p class="header-subtitle">Hardware Portion</p>            
+
+    
+        </div>              
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-caption">
+                    <h2 class="section-title mb-3">About</h2>
+                    <p>
+                        This was the hardware portion of the project. This is essentially the back-end services of our project, which includes the use of the arduino to detect vehicles and parking spot allocations. The hardware interacts with the software in order to display to the customer if they have parked successfully
+                    </p>
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+    
+     <div class="container text-center">
+      <div class="header-content container">
+           <img class="about-img" src="assets/imgs/Capstone_Pictures/skeleton.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" >
+ <img class="about-img" src="assets/imgs/Capstone_Pictures/completed.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" >
+         <p>Parking Lot Skeleton (left), Finished Parking Lot (right)</p>
+    </div>
+    </div>
+    
+<div class="py-5"></div> 
+    <!-- blog section -->
+    <section class="section" id="blog">
+        <!-- container -->
+        <div class="container text-center">
+            <h6 class="section-title mb-6">Results</h6>
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Capstone_Pictures/parking_lot.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Parking Lot Layout</h6>
+
+                    <p> Each parking spot has a weight sensor which is connected to an LED light which will blink red for 'occupied' and green if that spot is available. It also features an ESP32 camera which the customer uses to display their given QR code in order to gain access to the parking lot</p>
+
+       
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Capstone_Pictures/servo_gates.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Servo Gates</h6>
+
+                 
+                    
+                    <p>Once at the parking lot entrance, customers will be asked to present a QR code to the esp32-cam. Once our implemented algorithm verifies the QR code, it will trigger the servo motors to start turning 90 degrees in order to allow the car to enter the parking lot. These servos can be depicted in the real world, where gates are used in order to allow vehicles access to certain places. </p>
+
+                </div>
+            </div><!-- end of blog wrapper -->
+
+              <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Capstone_Pictures/weight_sensor.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">5kg Weight Sensor</h6>
+
+                 
+                    
+                    <p> Each parking spot has a 5kg weight sensor which detects if a vehicle is parked there or not. We decided to use weight sensors, since they are very useful for small parking lots and there is a less chance of error. This is mainly because the weight of a car is very distinct so there is a very low chance, this sensor will detect an object other than a car.</p>
+
+                </div>
+            </div><!-- end of blog wrapper -->
+            
+               <div class="blog-card">
+               
+               <div class="blog-card-header">
+                    <img src="assets/imgs/Capstone_Pictures/leds.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Leds</h6>
+
+                 
+                    
+                    <p> Each of the weight sensors (as mentioned above) is connected to simple led circuit in which if a car is on top of the weight sensor, the led will switch red, otherwise it will light up green for an available parking spot. A simple diagram is shown below to illustrate the connection between the weight sensors and the Leds.<img src="assets/imgs/Capstone_Pictures/diagram.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"></p>
+                    
+
+                </div>
+            </div><!-- end of blog wrapper -->
+        </div><!-- end of container -->
+    </section><!-- end of blog section -->
+
+      
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="mailto:kisoban.r@gmail.com" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
+                    </div>
+                </div>  
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevCRUD</a></p>
+             <div class="social-links text-right m-auto ml-sm-auto">
+            <a href="https://www.linkedin.com/in/kisoban-rajendran-2555bb301/" class="link"><i class="ti-linkedin"></i></a>
+            
+            <a href="https://github.com/KISOBAN" class="link"><i class="ti-github"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+</html>

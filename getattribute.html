@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Get Attribute </title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="index.html">Kisoban Rajendran</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#pricing">Function</a>
+                </li>
+             
+                <li class="item">
+                    <a class="link" href="#blog">Problems</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header header-mini">
+        <div class="overlay"></div>
+        <div class="header-content container"><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+           
+            <p class="header-subtitle">Attribute Detection</p>            
+
+    
+        </div>              
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                 <div class="about-img-holder">
+                    <img src="assets/imgs/Card_Pictures/attributes.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+  </div>
+                <div class="about-caption">
+                    <h2 class="section-title mb-3">About</h2>
+                    <p>
+                        As seen in the previous page, this detected the attribute which is the circle on the top right of the card. This allows us to classify what kind of card is presented to the camera. All the different Attributes can be seen on the left. (*Note: there is also a 'divine' attribute but I decided to leave that since there are very few of those types of cards.)
+                    </p>
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+    
+        <!-- pricing section -->
+    <section class="section" id="pricing">
+        <div class="container text-center">
+            <p class="section-subtitle">How does it work?</p>
+            <h6 class="section-title mb-6">The Function Call</h6>
+            <!-- row -->
+            <div class="pricing-wrapper">
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                  
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">1</h6>
+                        <div class="pricing-card-list">
+                            <p>Each of the attributes (as seen above) must be gray scaled and binary thresholded</p>
+                            <p>The same is also done with the input image after its been resized</p>
+                            <p>These can be seen below</p>
+                            <img class="blog-card-img" src="assets/imgs/Card_Pictures/threshold.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                            <p><i class="ti-close"></i></p>
+                            <p><i class="ti-close"></i></p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>Threshold</span>
+                    </div>
+                    
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                     
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">2</h6>
+                        <div class="pricing-card-list">
+                            <p>The input thresholded image is now bitwise ANDED with each of thresholded attribute images</p>
+                            <p>Each produces a separate image result with a different number of pixels</p>
+                            <p>These can be seen below</p>
+                         
+
+                           
+                         
+
+                          <img class="blog-card-img" src="assets/imgs/Card_Pictures/result.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                            <p><i class="ti-close"></i></p>
+                            <p><i class="ti-close"></i></p>
+                      
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>Bitwise AND</span>
+                    </div>
+                   
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                       
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">3</h6>
+                        <div class="pricing-card-list">
+                            <p>Count the number of White Pixels</p>
+                            <p>The image with the most white pixels must match that of the original image</p>
+                            <p>Therefore the number of white pixels is counted for each result</p>
+                            <p>The image with the most white pixels determines which attribute that image belongs to</p>
+                                                        <p><i class="ti-close"></i></p>
+
+                                    <p><i class="ti-close"></i></p>
+                            <p><i class="ti-close"></i></p>
+                            <p><i class="ti-close"></i></p>
+                            <p><i class="ti-close"></i></p>
+                            <p><i class="ti-close"></i></p>
+                            <p><i class="ti-close"></i></p>
+
+                      
+                        </div>
+                    </div>
+                                         
+                    
+                    <div class="pricing-card-footer">
+                        <span>Count</span>
+                    </div>
+                    
+                </div>
+
+            </div><!-- end of pricing wrapper -->
+        </div> <!-- end of container -->
+    </section><!-- end of pricing section -->
+
+    
+<div class="py-5"></div> 
+    <!-- blog section -->
+    <section class="section" id="blog">
+        <!-- container -->
+        <div class="container text-center">
+            <h6 class="section-title mb-6">Some Problems that occurred</h6>
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Card_Pictures/threshold2.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Thresholding Problems</h6>
+
+                    <p> Some images were already of a light color so when thresholded would return an image that was white in areas other than the symbol so it was necessary to darken some images of the attributes so that when it is thresholded, only the symbol and letters would remain white</p>
+
+       
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+        </div><!-- end of container -->
+    </section><!-- end of blog section -->
+    
+    
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="mailto:kisoban.r@gmail.com" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
+                    </div>
+                </div>  
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevCRUD</a></p>
+             <div class="social-links text-right m-auto ml-sm-auto">
+            <a href="https://www.linkedin.com/in/kisoban-rajendran-2555bb301/" class="link"><i class="ti-linkedin"></i></a>
+            
+            <a href="https://github.com/KISOBAN" class="link"><i class="ti-github"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+</html>
