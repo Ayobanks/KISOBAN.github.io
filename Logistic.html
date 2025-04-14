@@ -87,11 +87,11 @@
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title">1</h6>
                         <div class="pricing-card-list">
-                            <p>1.) the input signal is taken and segmented into different blocks in which each block has a window function (hamming window) applied to it so that minimal spectral leakage occurs </p> <br/>
+                            <p>1.) Standardize all Features </p> <br/>
                             <p>
-                                2.) Each block is then zero-padded and the fft of each block is computed separately</p>
-<p><br/>3.) The frequency bins of each of the segmented block is calculated using the indices and the sampling frequency of 44,100Hz</p><br/><p>
-4.) Depending on the given Frequency, the blocks representing that narrowband region of frequencies is extracted and a surface plot is made for those audio signals as seen below.</p>
+                                2.) Each weight (9 weights + bias) is initialized randomly and we calculate sigmoid(x) for each sample </p>
+<p><br/>3.) Calculate the error between the actual value and the predicted value (when inputted into sigmoid function), this is repeated for each sample and averaged. </p><br/><p>
+4.) Use the Update rule to update each weight</p>
                             <img class="blog-card-img" src="assets/imgs/ENFPictures/plots.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                      
                         </div>
