@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Meyawo landing page.">
     <meta name="author" content="Devcrud">
-    <title>ENF</title>
+    <title>Gradient Descent</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
@@ -106,9 +106,9 @@
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title">2</h6>
                         <div class="pricing-card-list">
-                            <p>The plots on the left is compared with the plot below </p>
+                            <p>After each Iteration of the gradient descent algorithm we calculate the error using this cost function which is essentially the actual value subtracted from the predicted value </p>
 
-                          <img class="blog-card-img" src="assets/imgs/ENFPictures/plot2.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                          <img class="blog-card-img" src="assets/imgs/LogisticPictures/cost.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
 
                         </div>
                     </div>
@@ -121,14 +121,13 @@
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title">3</h6>
                         <div class="pricing-card-list">
-                            <p>To validate the audio signal we take the cross correlation of the two signals. (In this case we used Ground truth1 and recording1)</p>
+                            <p>To Update the weights, we need to apply the update rule along with its learning rate as seen below.
+                            </p>
+                            <p> We need to take a partial derivative of the error function with respect to each individual weight (theta).</p>
 
 
 
-<p>It can be seen that at that point (x=35) is when the two signals are correlated the most, meaning if we shift of the signals that amount of times, they will resemble each other the most. However this must be shifted back 33</p>
-
-
-                          <img class="blog-card-img" src="assets/imgs/ENFPictures/cross.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">             
+                          <img class="blog-card-img" src="assets/imgs/LogisticPictures/updatederived.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">             
                         </div>
                     </div>              
                 </div>
@@ -137,8 +136,58 @@
         </div> <!-- end of container -->
     </section><!-- end of pricing section -->
 
-    
-    
+   <section class="section" id="pricing">
+        <div class="container text-center">
+           
+            <h6 class="section-title mb-6">Output</h6>
+              <p>The Learning curves after running this algorithm can be seen below. For each Iteration and learning rate there are two plots. The first plot in each table element represents the learning curve for batch gradient descent, the second plot represents the learning curve for mini-batch gradient descent.  </p> <br/>
+      <table class="table">
+         <thead>
+            <tr>
+               <th scope="col">Iterations</th>
+            
+               <th scope="col">Learning Rate = 0.001</th>
+               <th scope="col">Learning Rate = 0.0001</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+                
+               <th scope="row"> 500</th>
+               <td>  <img class="blog-card-img" src="assets/imgs/LogisticPictures/0.001-500.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                   <img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch0001500.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </td>
+                
+               <td><img class="blog-card-img" src="assets/imgs/LogisticPictures/00001500.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch00001500.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </td>
+             
+            </tr>
+            <tr>
+               <th scope="row">1000</th>
+               <td><img class="blog-card-img" src="assets/imgs/LogisticPictures/0.001-1000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                
+                   <img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch00011000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"></td>
+                
+               <td><img class="blog-card-img" src="assets/imgs/LogisticPictures/000011000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                
+                 <img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch000011000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"></td>
+           
+            </tr>
+            <tr>
+               <th scope="row">10000</th>
+               <td><img class="blog-card-img" src="assets/imgs/LogisticPictures/0.001-10000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch000110000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"></td>
+                
+                
+               <td><img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch0000110000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                 <img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch0000110000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"></td>
+               
+            </tr>
+         </tbody>
+      </table>
+            
+            
     <!-- contact section -->
     <section class="section" id="contact">
         <div class="container text-center">
