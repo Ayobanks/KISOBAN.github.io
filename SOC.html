@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Gradient Descent</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="index.html">Kisoban Rajendran</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#pricing">Function</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="down">Custom HPS/FPGA SOC Prototype</span>
+            </h1>
+            <p class="header-subtitle">C, VHDL, Quartus II</p>            
+
+        </div>              
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+              
+                <div class="about-caption">
+                    <h2 class="section-title mb-3">About</h2>
+                    <p>
+                        In this project, I implemented a custom HPS/FPGA SOC using the DE1-SOC development board. The board's LEDs were programmed through the use of an HPS bridge which is essentially a link between the hardware and the linux terminal in order to see the output of the program.
+          
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+ 
+    </section> <!-- end of about section -->
+<br/><br/><br/><br/><br/><br/><br/>
+       <!-- pricing section -->
+    <section class="section" id="pricing">
+        <div class="container text-center">
+            <p class="section-subtitle">How does it work?</p>
+            <h6 class="section-title mb-6">Implementation</h6>
+            <!-- row -->
+             <img class="blog-card-img" src="assets/imgs/SOCPictures/Qsys.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+            <div class="pricing-wrapper">
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                  
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">1</h6>
+                        <div class="pricing-card-list">
+                            <p> an HPS bridge was essential in order to assert the hardware on the board with the c program.</p>
+                            <br/>
+                            <p>This was done using VHDL programs to map each pin signal on the board to an appropriate signal then exporting that as header files using the ‘qsys’ program on Quartus, this can be seen above as the initial setup. </p><br/>
+                         
+
+                        </div>
+                    </div>
+              
+                    
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                     
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">2</h6>
+                        <div class="pricing-card-list">
+                            <p> Sample output on the Embedded Linux terminal</p>
+
+                          <img class="blog-card-img" src="assets/imgs/SOCPictures/terminal.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <p> First a Light show occurs showing all hexadecimal digits on the LEDs and any switches that were turned on/off will also display on the terminal.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                       
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">3</h6>
+                        <div class="pricing-card-list">
+                            <p>After the Light Show a message will be displayed on the 6 LEDS ("COE838"). We also print a message on the terminal "Hello World"
+                            </p>
+                         
+
+
+
+                          <img class="blog-card-img" src="assets/imgs/SOCPictures/board.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">  
+                                  <p>Any switches (bottom left 10 switches on the above image) pressed after that will be displayed on the terminal as "On/Off" and as a decimal representation of the 10 digit binary number </p><br/>
+                            <p>(ex. out of the 10 switches if 1 switch on the far left is pressed then that corresponding binary number is "1000000000" and in decimal that is 512).</p>
+                        </div>
+                    </div>              
+                </div>
+
+            </div><!-- end of pricing wrapper -->
+        </div> <!-- end of container -->
+    </section><!-- end of pricing section -->
+
+   <div class="container text-center">
+                    <div class="testimonial-card">
+                 
+                        <div class="testimonial-card-img-holder">
+                           <a href="https://github.com/KISOBAN/Gradient-Descent" class="link">
+                            <img src="assets/imgs/GitHub.png" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
+                        </div>
+                            
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Check out the Code on the Github Page</p>
+                             
+                            <h6 class="testimonial-card-title">GitHub</h6></a>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+    
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="mailto:kisoban.r@gmail.com" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
+                    </div>
+                </div>  
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevCRUD</a></p>
+             <div class="social-links text-right m-auto ml-sm-auto">
+            <a href="https://www.linkedin.com/in/kisoban-rajendran-2555bb301/" class="link"><i class="ti-linkedin"></i></a>
+            
+            <a href="https://github.com/KISOBAN" class="link"><i class="ti-github"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+</html>
