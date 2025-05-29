@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Meyawo landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Custom HPS/FPGA SOC</title>
+    <meta name="description" content="Image Encryption Tool - Beginner Python Project">
+    <meta name="author" content="Ayo Banks">
+    <title>Image Encryption Tool</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
@@ -16,7 +16,7 @@
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="index.html">Kisoban Rajendran</a>         
+            <a class="logo" href="index.html">Ayo Banks</a>         
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -25,7 +25,19 @@
                     <a class="link" href="#about">About</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#pricing">Function</a>
+                    <a class="link" href="#function">Function</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#techstack">Tech Stack</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#usage">Usage</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#skills">Skills Gained</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#challenges">Challenges</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#contact">Contact</a>
@@ -47,149 +59,226 @@
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
-                <span class="down">Custom HPS/FPGA SOC Prototype</span>
+                <span class="down" style="font-size: 3.1rem;">Image Encryption Tool</span>
             </h1>
-            <p class="header-subtitle">C, VHDL, Quartus II</p>            
-
+            <p class="header-subtitle">Beginner Python Project </p>            
         </div>              
     </header><!-- end of page header -->
 
     <!-- about section -->
     <section class="section pt-0" id="about">
-        <!-- container -->
         <div class="container text-center">
-            <!-- about wrapper -->
             <div class="about">
-              
                 <div class="about-caption">
-                    <h2 class="section-title mb-3">About</h2>
+                    <h2 class="section-title mb-3">About This Project</h2>
                     <p>
-                        In this project, I implemented a custom HPS/FPGA SOC using the DE1-SOC development board. The board's LEDs were programmed through the use of an HPS bridge which is essentially a link between the hardware and the linux terminal in order to see the output of the program.
-          
+                        This is my very first time using Python to code — an <strong>Image Encryption Tool.</strong> It is designed to encrypt and decrypt images with simple algorithms.
+                        <br><br>
+                        As a beginner, this project represents my journey of learning programming fundamentals while applying them to solve real-world problems like image security and privacy.
+                        <br><br>
+                        The tool uses basic Python libraries to manipulate image data and applies straightforward encryption methods to protect the image content. It’s user-friendly, easy to understand, and a solid foundation for my growth in programming and cybersecurity.
+                    </p>
                 </div>              
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
- 
+            </div>
+        </div>
     </section> <!-- end of about section -->
-<br/><br/><br/><br/><br/><br/><br/>
-       <!-- pricing section -->
-    <section class="section" id="pricing">
+
+    <br/><br/><br/><br/>
+
+    <!-- function section -->
+    <section class="section" id="function">
         <div class="container text-center">
-            <p class="section-subtitle">How does it work?</p>
-            <h6 class="section-title mb-6">Implementation</h6>
-            <!-- row -->
-             <img class="blog-card-img" src="assets/imgs/SOCPictures/Qsys.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+            <p class="section-subtitle">How Does It Work?</p>
+            <h6 class="section-title mb-6">Project Implementation & Features</h6>
+
             <div class="pricing-wrapper">
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                  
-                    </div>
-                    <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">1</h6>
-                        <div class="pricing-card-list">
-                            <p> an HPS bridge was essential in order to assert the hardware on the board with the c program.</p>
-                            <br/>
-                            <p>This was done using VHDL programs to map each pin signal on the board to an appropriate signal then exporting that as header files using the ‘qsys’ program on Quartus, this can be seen above as the initial setup. </p><br/>
-                         
 
-                        </div>
-                    </div>
-              
-                    
-                </div>
                 <div class="pricing-card">
-                    <div class="pricing-card-header">
-                     
-                    </div>
                     <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">2</h6>
+                        <h6 class="pricing-card-title">Step 1</h6>
                         <div class="pricing-card-list">
-                            <p> Sample output on the Minicom terminal</p>
-
-                          <img class="blog-card-img" src="assets/imgs/SOCPictures/terminal.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <p> First a Light show occurs showing all hexadecimal digits on the LEDs and any switches that were turned on/off will also display on the terminal.
+                            <p>Load an image file using Python's <code>PIL</code> (Pillow) library to access pixel data.</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="pricing-card">
-                    <div class="pricing-card-header">
-                       
-                    </div>
                     <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">3</h6>
+                        <h6 class="pricing-card-title">Step 2</h6>
                         <div class="pricing-card-list">
-                            <p>After the Light Show a message will be displayed on the 6 LEDS ("COE838"). We also print a message on the terminal "Hello World"
-                            </p>
-                         
+                            <p>Apply a simple encryption algorithm — like XOR with a secret key — to each pixel’s RGB values to scramble the image.</p>
+                        </div>
+                    </div>
+                </div>
 
-
-
-                          <img class="blog-card-img" src="assets/imgs/SOCPictures/board.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">  
-                                  <p>Any switches (bottom left 10 switches on the above image) pressed after that will be displayed on the terminal as "On/Off" and as a decimal representation of the 10 digit binary number </p><br/>
-                            <p>(ex. out of the 10 switches if 1 switch on the far left is pressed then that corresponding binary number is "1000000000" and in decimal that is 512).</p>
+                <div class="pricing-card">
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Step 3</h6>
+                        <div class="pricing-card-list">
+                            <p>Save the encrypted image as a new file that looks visually distorted, protecting the original image content.</p>
                         </div>
                     </div>              
                 </div>
 
-            </div><!-- end of pricing wrapper -->
-        </div> <!-- end of container -->
-    </section><!-- end of pricing section -->
-
-   <div class="container text-center">
-                    <div class="testimonial-card">
-                 
-                        <div class="testimonial-card-img-holder">
-                           <a href="https://github.com/KISOBAN/Custom-SOC" class="link">
-                            <img src="assets/imgs/GitHub.png" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
+                <div class="pricing-card">
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Step 4</h6>
+                        <div class="pricing-card-list">
+                            <p>Decrypt the image by applying the same key and XOR operation to recover the original image perfectly.</p>
                         </div>
-                            
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Check out the Code on the Github Page</p>
-                             
-                            <h6 class="testimonial-card-title">GitHub</h6></a>
-                        </div>
-                        
-                        </a>
+                    </div>              
                 </div>
-    
+
+            </div>
+        </div>
+    </section><!-- end of function section -->
+
+    <br/><br/>
+
+    <!-- Tech Stack section -->
+    <section class="section bg-light" id="techstack">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">Tech Stack</h2>
+            <p class="lead mb-5">A carefully selected set of tools and technologies that power this project to ensure simplicity, efficiency, and scalability.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <i class="ti-brush-alt icon-lg mb-3"></i>
+                    <h5>Python</h5>
+                    <p>Core programming language powering the tool’s logic and operations.</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="ti-image icon-lg mb-3"></i>
+                    <h5>Pillow (PIL)</h5>
+                    <p>Python Imaging Library to handle image loading, pixel manipulation, and saving.</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="ti-lock icon-lg mb-3"></i>
+                    <h5>Encryption</h5>
+                    <p>Simple XOR algorithm implemented for effective image data obfuscation.</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="ti-layout-grid3 icon-lg mb-3"></i>
+                    <h5>Bootstrap</h5>
+                    <p>Responsive design framework to create a clean and modern UI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br/><br/>
+
+    <!-- Usage section -->
+    <section class="section" id="usage">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">Usage</h2>
+            <p class="lead mb-4">Step-by-step instructions to run and test the Image Encryption Tool with ease.</p>
+            <ul class="list-unstyled text-left mx-auto" style="max-width: 600px;">
+                <li class="mb-3"><strong>1.</strong> Install Python 3.x on your machine.</li>
+                <li class="mb-3"><strong>2.</strong> Use <code>pip install pillow</code> to install the required Pillow library.</li>
+                <li class="mb-3"><strong>3.</strong> Run the Python script to load an image and choose to encrypt or decrypt.</li>
+                <li class="mb-3"><strong>4.</strong> Provide a secret key for encryption/decryption to secure your images.</li>
+                <li class="mb-3"><strong>5.</strong> Check the output folder for the encrypted or decrypted image files.</li>
+                <li class="mb-3"><strong>6.</strong> Share or store your encrypted images safely knowing they’re protected.</li>
+            </ul>
+        </div>
+    </section>
+
+    <br/><br/>
+
+    <!-- Skills Gained section -->
+    <section class="section bg-light" id="skills">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">Skills Gained</h2>
+            <p class="lead mb-4">What I learned and mastered while building this project:</p>
+            <div class="row justify-content-center text-left" style="max-width: 900px; margin: 0 auto;">
+                <div class="col-md-6 mb-4">
+                    <h5><i class="ti-cup"></i> Programming Fundamentals</h5>
+                    <p>Understanding data types, loops, conditional statements, and file handling in Python.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5><i class="ti-lock"></i> Basic Cryptography</h5>
+                    <p>Implementing a simple XOR cipher for data encryption and decryption.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5><i class="ti-image"></i> Image Processing</h5>
+                    <p>Manipulating pixel data using the Pillow library to alter images programmatically.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5><i class="ti-world"></i> Version Control & Collaboration</h5>
+                    <p>Uploading and sharing code on GitHub for collaboration and feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br/><br/>
+
+    <!-- Challenges section -->
+    <section class="section" id="challenges">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">Challenges Faced</h2>
+            <p class="lead mb-4">Every learning journey has its obstacles — here’s what I overcame:</p>
+            <ul class="list-unstyled mx-auto text-left" style="max-width: 700px;">
+                <li class="mb-3"><strong>Understanding Image Data:</strong> Grasping how pixel values are represented and manipulated was initially complex.</li>
+                <li class="mb-3"><strong>Implementing Encryption Logic:</strong> Designing a reversible yet simple encryption algorithm required careful thought.</li>
+                <li class="mb-3"><strong>File Handling & I/O:</strong> Managing image files and ensuring no data corruption during saving took multiple tries.</li>
+                <li class="mb-3"><strong>Debugging:</strong> Fixing bugs that caused partial encryption or failed decryption demanded persistence and testing.</li>
+                <li class="mb-3"><strong>Balancing Simplicity & Security:</strong> Ensuring the tool remains beginner-friendly while providing real encryption value.</li>
+            </ul>
+        </div>
+    </section>
+
+    <br/><br/>
+
+    <div class="container text-center">
+        <div class="testimonial-card">
+            <div class="testimonial-card-img-holder">
+               <a href="" class="link" target="_blank" rel="noopener noreferrer">
+                <img src="assets/imgs/GitHub.png" class="testimonial-card-img" alt="GitHub Repository Link">
+               </a>                        
+            </div>
+            <div class="testimonial-card-body">
+                <p class="testimonial-card-subtitle">Explore the full source code and contribute!</p>
+                <h6 class="testimonial-card-title">GitHub Repository</h6>
+            </div>
+        </div>
+    </div>
+
     <!-- contact section -->
     <section class="section" id="contact">
         <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
+            <p class="section-subtitle">Let's Connect</p>
             <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form action="mailto:kisoban.r@gmail.com" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form action="mailto:your.email@example.com" class="contact-form col-md-10 col-lg-8 m-auto" method="post" enctype="text/plain">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
                         <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
+                        <input type="email" class="form-control" placeholder="Enter Email" required>                 
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                        <textarea name="comment" id="comment" rows="6" class="form-control" placeholder="Write Something"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
                         <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
                     </div>
                 </div>  
-            </form><!-- end of contact form -->
-        </div><!-- end of container -->
+            </form>
+        </div>
     </section><!-- end of contact section -->
 
     <!-- footer -->
     <div class="container">
         <footer class="footer">       
-            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevCRUD</a></p>
-             <div class="social-links text-right m-auto ml-sm-auto">
-            <a href="https://www.linkedin.com/in/kisoban-rajendran-2555bb301/" class="link"><i class="ti-linkedin"></i></a>
-            
-            <a href="https://github.com/KISOBAN" class="link"><i class="ti-github"></i></a>
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; Ayo Banks</p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://www.linkedin.com/in/yourprofile" class="link"><i class="ti-linkedin"></i></a>
+                <a href="https://github.com/YourGitHubUsername" class="link"><i class="ti-github"></i></a>
             </div>
         </footer>
-    </div> <!-- end of page footer -->
-	
+    </div>
+
 	<!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>

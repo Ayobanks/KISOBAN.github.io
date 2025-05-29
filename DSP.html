@@ -1,22 +1,21 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Meyawo landing page.">
-    <meta name="author" content="Devcrud">
-    <title>DSP</title>
+    <meta name="description" content="Password Strength Checker Tool - Beginner Python Project">
+    <meta name="author" content="Your Name">
+    <title>Password Strength Checker Tool</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
 	<link rel="stylesheet" href="assets/css/meyawo.css">
 </head>
-    <style>
+<style>
     .pdf {
         width: 100%;
         aspect-ratio: 4 / 3;
     }
-
     .pdf,
     html,
     body {
@@ -24,14 +23,28 @@
         margin: 0;
         padding: 0;
     }
-
     h1,
     h3 {
         text-align: center;
     }
-
     h1 {
         color: black;
+    }
+    .section-title {
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+    }
+    .section {
+        padding: 4rem 0;
+    }
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .content {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
     }
 </style>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -39,7 +52,7 @@
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="index.html">Kisoban Rajendran</a>         
+            <a class="logo" href="index.html">Ayo Banks</a>         
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -47,12 +60,20 @@
                 <li class="item">
                     <a class="link" href="#about">About</a>
                 </li>
-             
                 <li class="item">
-                    <a class="link" href="#contact">Contact</a>
+                    <a class="link" href="#techstack">Tech Stack</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#usage">Usage</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#skills">Skills Gained</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#challenges">Challenges</a>
                 </li>
                 <li class="item ml-md-3">
-                    <a href="components.html" class="btn btn-primary">Components</a>
+                    <a href="" target="_blank" class="btn btn-primary">View Code</a>
                 </li>
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
@@ -68,139 +89,119 @@
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
-                <span class="down">FIR Filter Implementation on a DSP</span>
+                <span class="down">Password Strength Checker Tool</span>
             </h1>
-            <p class="header-subtitle">Digital Signal Processing</p>            
-
+            <p class="header-subtitle">A Beginner-Friendly Python Project</p>            
         </div>              
     </header><!-- end of page header -->
 
     <!-- about section -->
     <section class="section pt-0" id="about">
-        <!-- container -->
         <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-               
-                <div class="about-caption">
-                    <h2 class="section-title mb-3">About</h2>
-                    <p>
-                        In this project, I implemented both a low-pass and a notch filter on the DSP in C. This was done using the TMS320C6713 floating-point Digital Signal Processor (DSP).
-                    </p>
-          
-                </div>              
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
- 
-    </section> <!-- end of about section -->
+            <div class="about-caption content">
+                <h2 class="section-title mb-3">About This Project</h2>
+                <p>
+                    This Password Strength Checker is a Python-based tool designed to evaluate how strong a password is by checking for length, use of uppercase and lowercase letters, numbers, and special characters. 
+                    Created as part of my journey learning Python programming basics, this project shows my growing understanding of coding fundamentals and logical problem solving.
+                </p>
+                <p>
+                    It’s simple yet practical — a perfect example of how beginner programmers can build useful tools while improving their skills.
+                </p>
+            </div>              
+        </div>
+    </section>
 
-    
-    
-  <!-- Software and Hardware portion -->
-    <div class="header-content container">
-          <div class="container text-center">
-      <h2 class="section-title mb-3"> Filters</h2>
-       <section class="section" id="service">
+    <!-- Tech Stack -->
+    <section class="section" id="techstack">
         <div class="container text-center">
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-6">
-                   <a href= "LowPassFilter.html" >
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/pencil-case.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Low Pass Filter</h6>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-           
-               
-                
-                
-                <div class="col-md-6 col-lg-6">        
-                    <a href="Notch.html" >
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/responsive.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Notch Filter</h6> 
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-           </div>
-           
-    <!-- about section -->
-    <section class="section pt-0" id="about">
-        <!-- container -->
+            <h2 class="section-title mb-3">Tech Stack</h2>
+            <p class="content">
+                <strong>Language:</strong> Python (core fundamentals)<br>
+                <strong>Tools:</strong> VS Code / Any Python IDE<br>
+                <strong>Libraries:</strong> None (built from scratch for learning purposes)<br>
+                <strong>Concepts Used:</strong> Conditional logic, string methods, functions, user input handling
+            </p>
+        </div>
+    </section>
+
+    <!-- Usage -->
+    <section class="section" id="usage">
         <div class="container text-center">
-            <br/><br/>
-            <!-- about wrapper -->
-            
-            <div class="blog">
-                <a href = "https://github.com/KISOBAN/FIR-Filter-Implementation">
-                 <div class="blog-img-holder">
-                    <img src="assets/imgs/GitHub.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-  </div>
-                <div class="about-caption">
-                    <h2 class="section-title mb-3">Implementation</h2>
-                </div>  
-                </a>
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
-     
-           <object class="pdf" 
-            data = "assets/imgs/DSP_Pictures/Report.pdf"
-            width="800"
-            height="500">
-    </object>
-     
+            <h2 class="section-title mb-3">Usage</h2>
+            <p class="content">
+                Simply run the Python script and enter your desired password when prompted. The tool will analyze your password and provide feedback on its strength along with tips for improvement.<br><br>
+                This helps users understand what makes a password strong and encourages better security habits.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Gained -->
+    <section class="section" id="skills">
+        <div class="container text-center">
+            <h2 class="section-title mb-3">Skills Gained</h2>
+            <p class="content">
+                - Writing basic Python scripts and functions<br>
+                - Using string methods and conditional statements<br>
+                - Handling user input and displaying dynamic feedback<br>
+                - Debugging and testing simple programs<br>
+                - Understanding password security fundamentals<br>
+                - Building confidence in programming logic and problem solving
+            </p>
+        </div>
+    </section>
+
+    <!-- Challenges -->
+    <section class="section" id="challenges">
+        <div class="container text-center">
+            <h2 class="section-title mb-3">Challenges</h2>
+            <p class="content">
+                As a beginner, one challenge was figuring out how to properly check multiple conditions in the password, such as length and character variety, without making the code too complex.<br><br>
+                I also worked through understanding how to give clear feedback to the user in an easy-to-understand way.<br><br>
+                This project helped me learn how to break problems down into smaller parts and solve them step by step.
+            </p>
+        </div>
+    </section>
+
     <!-- contact section -->
     <section class="section" id="contact">
         <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
+            <p class="section-subtitle">Get In Touch</p>
             <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form action="mailto:kisoban.r@gmail.com" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form action="mailto:bankoleayomide6@gmail.com" class="contact-form col-md-10 col-lg-8 m-auto">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
                         <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
+                        <input type="email" class="form-control" placeholder="Enter Email" required>                 
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                        <textarea name="comment" id="comment" rows="6" class="form-control" placeholder="Write Something"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
                         <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
                     </div>
                 </div>  
-            </form><!-- end of contact form -->
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
+            </form>
+        </div>
+    </section>
 
     <!-- footer -->
     <div class="container">
         <footer class="footer">       
-            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevCRUD</a></p>
-             <div class="social-links text-right m-auto ml-sm-auto">
-            <a href="https://www.linkedin.com/in/kisoban-rajendran-2555bb301/" class="link"><i class="ti-linkedin"></i></a>
-            
-            <a href="https://github.com/KISOBAN" class="link"><i class="ti-github"></i></a>
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; Your Name</p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://www.linkedin.com/in/yourprofile/" class="link"><i class="ti-linkedin"></i></a>
+                <a href="https://github.com/YourGitHub" class="link"><i class="ti-github"></i></a>
             </div>
         </footer>
-    </div> <!-- end of page footer -->
-	
-	<!-- core  -->
+    </div>
+
+    <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
     <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
 

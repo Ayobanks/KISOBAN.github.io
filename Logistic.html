@@ -1,254 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Meyawo landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Gradient Descent</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Keylogger project demonstration and details." />
+    <meta name="author" content="Ayo Banks" />
+    <title>Keylogger Project</title>
+
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css" />
     <!-- Bootstrap + Meyawo main styles -->
-	<link rel="stylesheet" href="assets/css/meyawo.css">
+    <link rel="stylesheet" href="assets/css/meyawo.css" />
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    <!-- Page Navbar -->
+    <!-- Navigation Bar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="index.html">Kisoban Rajendran</a>         
+            <a class="logo" href="index.html">Ayo Banks</a>
             <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#pricing">Function</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#contact">Contact</a>
-                </li>
+                <li class="item"><a class="link" href="#home">Home</a></li>
+                <li class="item"><a class="link" href="#about">About</a></li>
+                <li class="item"><a class="link" href="#features">Features</a></li>
+                <li class="item"><a class="link" href="#tech">Tech Stack</a></li>
+                <li class="item"><a class="link" href="#usage">Usage</a></li>
+                <li class="item"><a class="link" href="#skills">Skills Gained</a></li>
+                <li class="item"><a class="link" href="#challenges">Challenges</a></li>
+                <li class="item"><a class="link" href="#demo">Demo</a></li>
+                <li class="item"><a class="link" href="#contact">Contact</a></li>
                 <li class="item ml-md-3">
                     <a href="components.html" class="btn btn-primary">Components</a>
                 </li>
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
                 <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
+                    <div class="hamburger-inner"></div>
                 </div>
             </a>
-        </div>          
-    </nav><!-- End of Page Navbar -->
+        </div>
+    </nav>
+    <!-- End Navigation Bar -->
 
-    <!-- page header -->
+    <!-- Header Section -->
     <header id="home" class="header">
         <div class="overlay"></div>
-        <div class="header-content container">
+        <div class="header-content container text-center">
             <h1 class="header-title">
-                <span class="down">Gradient Descent for a Logistic Regression</span>
+                <span class="down">Keylogger Project</span>
             </h1>
-            <p class="header-subtitle">Python, NumPy</p>            
+            <p class="header-subtitle">Python-based Keyboard Event Logger</p>
+        </div>
+    </header>
+    <!-- End Header -->
 
-        </div>              
-    </header><!-- end of page header -->
-
-    <!-- about section -->
+    <!-- About Section -->
     <section class="section pt-0" id="about">
-        <!-- container -->
         <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-              
-                <div class="about-caption">
-                    <h2 class="section-title mb-3">About</h2>
-                    <p>
-                        In this project I implemented a Gradient Descent algorithm for a Logistic Regression from Scratch using only the NumPy library in Python. This is essentially a binary classifier which utilizes a sigmoid activation function. This was tested on a dataset containing over 400 data samples.
-                    </p>
-          
-                </div>              
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
- 
-    </section> <!-- end of about section -->
-<br/><br/><br/><br/><br/><br/><br/>
-       <!-- pricing section -->
-    <section class="section" id="pricing">
+            <h2 class="section-title mb-4">Project Overview</h2>
+            <p class="lead mx-auto" style="max-width:700px; line-height:1.6;">
+                This <strong>Keylogger Tool</strong> is my very first Python project — built from scratch as I dive into coding for the first time.
+                It captures keyboard input events in real-time, logging keystrokes to help me understand how low-level event handling and data capturing works.
+                <br /><br />
+                As a beginner, this project was both a challenge and an exciting learning experience, giving me practical insight into programming fundamentals and Python’s capabilities.
+                <br /><br />
+                While the tool has basic features, it lays the foundation for more complex software I plan to build as I continue improving my skills.
+                <br /><br />
+                <strong>Important:</strong> This project is meant for educational purposes only. Always use such tools responsibly and ethically — never on unauthorized systems.
+                <br /><br />
+                I’m proud of this milestone on my coding journey and excited for what’s next!
+            </p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
         <div class="container text-center">
-            <p class="section-subtitle">How does it work?</p>
-            <h6 class="section-title mb-6">The Function Call</h6>
-            <!-- row -->
-            <div class="pricing-wrapper">
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                  
-                    </div>
-                    <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">1</h6>
-                        <div class="pricing-card-list">
-                            <p>1.) Standardize all Features </p> <br/>
-                            <p>
-                                2.) Each weight (9 weights + bias) is initialized randomly and we calculate sigmoid(x) for each sample </p>
-<p><br/>3.) Calculate the error between the actual value and the predicted value (when inputted into sigmoid function), this is repeated for each sample and averaged. </p><br/><p>
-4.) Use the Update rule to update each weight</p>
-                            <img class="blog-card-img" src="assets/imgs/LogisticPictures/sigmoid.PNG" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                     
-                        </div>
-                    </div>
-              
-                    
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                     
-                    </div>
-                    <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">2</h6>
-                        <div class="pricing-card-list">
-                            <p>After each Iteration of the gradient descent algorithm we calculate the error using this cost function which is essentially the actual value subtracted from the predicted value </p>
-
-                          <img class="blog-card-img" src="assets/imgs/LogisticPictures/cost.PNG" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-
-                        </div>
+            <h2 class="section-title mb-5">Key Features</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card p-4 shadow-sm rounded">
+                        <i class="ti-keyboard themify-icon mb-3" style="font-size: 48px; color:#007bff;"></i>
+                        <h5>Real-time Keystroke Capture</h5>
+                        <p>Records keystrokes in real-time with minimal latency.</p>
                     </div>
                 </div>
-                
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                       
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card p-4 shadow-sm rounded">
+                        <i class="ti-file themify-icon mb-3" style="font-size: 48px; color:#007bff;"></i>
+                        <h5>Secure Log Storage</h5>
+                        <p>Logs are stored locally in encrypted files for privacy and security.</p>
                     </div>
-                    <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">3</h6>
-                        <div class="pricing-card-list">
-                            <p>To Update the weights, we need to apply the update rule along with its learning rate as seen below.
-                            </p>
-                            <p> We need to take a partial derivative of the error function with respect to each individual weight (theta).</p>
-
-
-
-                          <img class="blog-card-img" src="assets/imgs/LogisticPictures/updatederived.PNG" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">             
-                        </div>
-                    </div>              
                 </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card p-4 shadow-sm rounded">
+                        <i class="ti-settings themify-icon mb-3" style="font-size: 48px; color:#007bff;"></i>
+                        <h5>Configurable Options</h5>
+                        <p>Adjust logging intervals, target applications, and output formats.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Features -->
 
-            </div><!-- end of pricing wrapper -->
-        </div> <!-- end of container -->
-    </section><!-- end of pricing section -->
-
-   <section class="section" id="pricing">
+    <!-- Tech Stack Section -->
+    <section class="section bg-light" id="tech">
         <div class="container text-center">
-           
-            <h6 class="section-title mb-6">Output</h6>
-              <p>The Learning curves after running this algorithm can be seen below. For each Iteration and learning rate there are two plots. The first plot in each table element represents the learning curve for batch gradient descent, the second plot represents the learning curve for mini-batch gradient descent.  </p> <br/>
-      <table class="table">
-         <thead>
-            <tr>
-               <th scope="col">Iterations</th>
-            
-               <th scope="col">Learning Rate = 0.001</th>
-               <th scope="col">Learning Rate = 0.0001</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-                
-               <th scope="row"> 500</th>
-               <td>  <img class="blog-card-img" src="assets/imgs/LogisticPictures/0.001-500.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                   <img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch0001500.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </td>
-                
-               <td><img class="blog-card-img" src="assets/imgs/LogisticPictures/00001500.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                <img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch00001500.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </td>
-             
-            </tr>
-            <tr>
-               <th scope="row">1000</th>
-               <td><img class="blog-card-img" src="assets/imgs/LogisticPictures/0.001-1000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                
-                   <img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch00011000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"></td>
-                
-               <td><img class="blog-card-img" src="assets/imgs/LogisticPictures/000011000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                
-                 <img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch000011000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"></td>
-           
-            </tr>
-            <tr>
-               <th scope="row">10000</th>
-               <td><img class="blog-card-img" src="assets/imgs/LogisticPictures/0.001-10000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                <img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch000110000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"></td>
-                
-                
-               <td><img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch0000110000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                 <img class="blog-card-img" src="assets/imgs/LogisticPictures/minibatch0000110000.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"></td>
-               
-            </tr>
-         </tbody>
-      </table>
-            
-   
-                    <div class="testimonial-card">
-                 
-                        <div class="testimonial-card-img-holder">
-                           <a href="https://github.com/KISOBAN/Gradient-Descent" class="link">
-                            <img src="assets/imgs/GitHub.png" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Check out the Code on the Github Page</p>
-                             
-                            <h6 class="testimonial-card-title">GitHub</h6></a>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-        
-    <!-- contact section -->
+            <h2 class="section-title mb-4">Tech Stack</h2>
+            <p class="mx-auto" style="max-width:700px; line-height:1.6;">
+                This project was developed using <strong>Python 3</strong>, focusing on core libraries like <code>pynput</code> for capturing keyboard events,
+                <code>logging</code> for secure file management, and basic encryption methods for log privacy.
+                <br /><br />
+                I leveraged beginner-friendly Python tools and modules to create a functional and extensible codebase that is easy to understand and maintain.
+            </p>
+        </div>
+    </section>
+
+    <!-- Usage Section -->
+    <section class="section" id="usage">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">How to Use</h2>
+            <p class="mx-auto" style="max-width:700px; line-height:1.6;">
+                1. Clone or download the repository from GitHub.<br />
+                2. Install the required dependencies using <code>pip install -r requirements.txt</code>.<br />
+                3. Run the script using <code>python keylogger.py</code>.<br />
+                4. The program runs silently, capturing keystrokes and saving them securely to a local encrypted log file.<br />
+                5. To stop logging, safely terminate the script via keyboard interrupt (Ctrl + C).<br /><br />
+                Please use responsibly and only on devices you own or have explicit permission to test on.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Gained Section -->
+    <section class="section bg-light" id="skills">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">Skills Gained</h2>
+            <ul class="list-unstyled mx-auto" style="max-width:700px; line-height:1.6; text-align:left;">
+                <li>✔ Understanding Python event handling with <code>pynput</code> library</li>
+                <li>✔ Writing clean, readable, and modular Python code</li>
+                <li>✔ Managing file I/O and applying basic encryption techniques</li>
+                <li>✔ Implementing real-time data capture with minimal performance impact</li>
+                <li>✔ Strengthening ethical considerations in cybersecurity tools</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section class="section" id="challenges">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">Challenges Overcome</h2>
+            <p class="mx-auto" style="max-width:700px; line-height:1.6;">
+                Starting with no prior programming experience, I faced a steep learning curve understanding event-driven programming concepts and Python’s syntax.
+                Debugging the asynchronous capturing of keystrokes and ensuring logs were stored securely tested my problem-solving skills.
+                <br /><br />
+                This project taught me persistence, resourcefulness, and how to break down complex problems into manageable tasks — foundational skills for any cybersecurity professional.
+            </p>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="section" id="demo">
+        <div class="container text-center">
+            <h2 class="section-title mb-5">Project Demo</h2>
+            <p class="mb-4">
+                Below is a snapshot of the Python script output running the keylogger, showing logged keystrokes in real-time.
+            </p>
+            <img src="assets/imgs/keylogger_demo.png" alt="Keylogger Demo Output" class="img-fluid rounded shadow" style="max-width:700px;" />
+            <div class="mt-4">
+                <a href="https://github.com/yourusername/keylogger" target="_blank" class="btn btn-primary">
+                    View Source Code on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Demo -->
+
+    <!-- Contact Section -->
     <section class="section" id="contact">
         <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form action="mailto:kisoban.r@gmail.com" class="contact-form col-md-10 col-lg-8 m-auto">
+            <h2 class="section-title mb-4">Contact Me</h2>
+            <p class="mb-4">Have questions or feedback? Reach out to me via email below.</p>
+            <form action="mailto:bankoleayomide6@gmail.com" method="post" enctype="text/plain" class="contact-form col-md-8 mx-auto">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
+                        <input type="text" class="form-control" placeholder="Your Name" name="name" required />
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
+                        <input type="email" class="form-control" placeholder="Your Email" name="email" required />
                     </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
-                    </div>
-                </div>  
-            </form><!-- end of contact form -->
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- End Contact -->
 
-    <!-- footer -->
-    <div class="container">
-        <footer class="footer">       
-            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevCRUD</a></p>
-             <div class="social-links text-right m-auto ml-sm-auto">
-            <a href="https://www.linkedin.com/in/kisoban-rajendran-2555bb301/" class="link"><i class="ti-linkedin"></i></a>
-            
-            <a href="https://github.com/KISOBAN" class="link"><i class="ti-github"></i></a>
-            </div>
-        </footer>
-    </div> <!-- end of page footer -->
-	
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Meyawo js -->
-    <script src="assets/js/meyawo.js"></script>
-
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar toggle for mobile
+        $("#nav-toggle").click(function () {
+            $(".nav").toggleClass("open");
+        });
+    </script>
 </body>
+
 </html>
